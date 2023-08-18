@@ -23,10 +23,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-6=naycy+af%^ta6w0v3^^_=_xy1de2-wj@$8kmmw5)co#z_vxn'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
-# DEBUG = True
+# DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['cloud-run-core-001-service-ov7uzm4lvq-uc.a.run.app', 'localhost:80', '127.0.0.1:80', '127.0.0.1:80']
+ALLOWED_HOSTS = ['cloud-run-core-001-service-ov7uzm4lvq-uc.a.run.app', 'localhost:80', '127.0.0.1:80', '127.0.0.1:8000','127.0.0.1']
 # ALLOWED_HOSTS =[]
 
 # Application definition

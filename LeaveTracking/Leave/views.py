@@ -196,7 +196,7 @@ def Acceptedlist(request):
 
 def register(request):
     if request.method == "POST":
-        name = request.POST['name']
+        name = name = request.POST['Empname']
         psw = request.POST['password']
         phone = request.POST['number']
         email = request.POST['email']

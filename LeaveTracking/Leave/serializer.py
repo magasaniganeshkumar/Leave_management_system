@@ -12,7 +12,7 @@ class EmployeeSerializer(serializers.ModelSerializer):
     def update(self, instance, validated_data):
         instance.Employee_Name = validated_data.get('Employee_Name', instance.Employee_Name)
         instance.password = validated_data.get('password', instance.password)
-        instance.Primary_Phone = validated_data.get('Primary_Phone', instance.year)
+        instance.Primary_Phone = validated_data.get('Primary_Phone', instance.Primary_Phone)  # Corrected attribute name
         instance.Email = validated_data.get('Email', instance.Email)
         instance.save()
         return instance

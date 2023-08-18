@@ -25,10 +25,10 @@ class Leave(models.Model):
         return str(self.Employee_Name)
 
 class Employee_Detail(models.Model):
-    Employee_Name = models.CharField(unique=True, max_length=30)
+    Employee_Name = models.CharField(max_length=30)
     password = models.CharField( max_length=30)
     Primary_Phone = models.CharField(max_length=12 )
-    Email = models.EmailField(max_length=50, unique=True)
+    Email = models.EmailField(max_length=50)
 
 
     def __str__(self):
