@@ -86,13 +86,23 @@ WSGI_APPLICATION = 'LeaveTracking.wsgi.application'
         'HOST': 'localhost',
         'PORT': '3306',
     }"""
-
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'leavedb',  
+        'USER': 'admin',       
+        'PASSWORD': '5s3i4eHGng0d3IqL2RcL',   
+        'HOST': 'database-1.cusiydzbu031.us-east-1.rds.amazonaws.com',   
+        'PORT': '3306',                
     }
 }
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
 
 
 # Password validation
