@@ -25,15 +25,15 @@ class EmployeeAPITest(APITestCase):
         self.employee = Employee_Detail.objects.create(**self.employee_data)
 
     def generate_random_name(self):
-        first_names = ["John", "Jane", "Michael", "Emily", "David", "Olivia", "James", "Sophia"]
-        last_names = ["Smith", "Johnson", "Williams", "Jones", "Brown", "Davis", "Miller"]
+        first_names = ["Ganesh", "Sai", "Babu", "Balaji", "Mahesh"]
+        last_names = ["Magasani", "Babu", "Sai", "Reddy", "Kumar"]
         return f"{random.choice(first_names)} {random.choice(last_names)}"
 
     def generate_random_phone(self):
         return random.choice(["9", "8"]) + ''.join([str(random.randint(0, 9)) for _ in range(9)])
 
     def generate_random_email(self):
-        usernames = ["user123", "testuser", "randomname"]
+        usernames = ["ganesh123", "ganeshuser", "ganeshmname"]
         return f"{random.choice(usernames)}@gmail.com"
 
     def test_create_employee(self):
