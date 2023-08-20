@@ -237,7 +237,7 @@ def logout(request):
 
 
 class EmployeeApi(APIView):
-    permission_classes = [IsAuthenticated]
+    # permission_classes = [IsAuthenticated]
     def get(self, request, **kwargs):
         if kwargs.get('pk'):
             pk = kwargs.get('pk')
