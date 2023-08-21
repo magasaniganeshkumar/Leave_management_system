@@ -8,19 +8,19 @@ from django.contrib.auth.models import User
 class EmployeeAPITest(APITestCase):
 
     def setUp(self):
-        self.user = User.objects.create_user(username='testuser', password='testpass')
-        self.client.login(username='testuser', password='testpass')
+        # self.user = User.objects.create_user(username='testuser', password='testpass')
+        # self.client.login(username='testuser', password='testpass')
 
         random_name = self.generate_random_name() + str(random.randint(1000, 9999))
         random_email = self.generate_random_email() + str(random.randint(1000, 9999))
         random_phone = self.generate_random_phone()
 
         self.employee_data = {
-            "Employee_Name": random_name,
+            # "Employee_Name": random_name,
             "Primary_Phone": random_phone,
             "Email": random_email,
             "password": f"RandomPass{random.randint(1000, 9999)}",
-            # Add other fields
+            
         }
         self.employee = Employee_Detail.objects.create(**self.employee_data)
 
@@ -71,7 +71,7 @@ class EmployeeAPITest(APITestCase):
             "Primary_Phone": "9876543910",
             "Email": "updated@example.com",
             "password": "UpdatedTest001@1234",
-            # Update other fields
+            
         }
         response = self.client.put(reverse('update', args=[self.employee.id]), updated_data, format='json')
         print("Response update_employee status code:", response.status_code)
