@@ -16,7 +16,7 @@ class EmployeeAPITest(APITestCase):
         random_phone = self.generate_random_phone()
 
         self.employee_data = {
-            # "Employee_Name": random_name,
+            "Employee_Name": random_name,
             "Primary_Phone": random_phone,
             "Email": random_email,
             "password": f"RandomPass{random.randint(1000, 9999)}",
