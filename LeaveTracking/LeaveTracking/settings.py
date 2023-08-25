@@ -77,22 +77,22 @@ WSGI_APPLICATION = 'LeaveTracking.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-"""DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'track',
-        'USER': 'root',
-        'PASSWORD': 'root',
-        'HOST': 'localhost',
-        'PORT': '3306',
-    }"""
+# """DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'track',
+#         'USER': 'root',
+#         'PASSWORD': 'root',
+#         'HOST': 'localhost',
+#         'PORT': '3306',
+#     }"""
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'leavedb',  
         'USER': 'admin',       
-        'PASSWORD': '5s3i4eHGng0d3IqL2RcL',   
-        'HOST': 'database-1.cusiydzbu031.us-east-1.rds.amazonaws.com',   
+        'PASSWORD': 'hKNHkeVELBf2edez1XQP',   
+        'HOST': 'database-1.cz2b5nwgk3jr.us-east-1.rds.amazonaws.com',   
         'PORT': '3306',                
     }
 }
